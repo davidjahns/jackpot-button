@@ -6,34 +6,66 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Jackpot Button - Powerball Lottery Number Generator</title>
     <meta name="description" content="generate your lottery numbers and powerball number when you push the jackpot button">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 
     <!-- apple icons -->
-   <!--  <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+    <!-- <link rel="apple-touch-icon" href="touch-icon-iphone.png">
     <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
     <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
     <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png"> -->
 
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
+    <body class="tk-sofia-pro-soft">
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <div id="overlay" class="overlay-scale">
+          <h2>Welcome to Jackpot Button!</h2>
+          <p>Tap the JACKPOT button to generate random lottery numbers.</p>
+          <p>They just could be the winning numbers...</p>
+          <img src="images/patrick.gif" alt="Patrick wishing you good luck.">
+          <button id="go">Let's Go!</button>
+        </div>
+
+
+        <header>
+          <h1><img src="images/coins.svg" class="logo">Jackpot Button<img src="images/coins.svg" class="logo"></h1>
+        </header>
+
         <div class="container">
 
-            <h1>Jackpot Button</h1>
-            <h2>Tap the Jackpot Button to randomly generate a Powerball play!</h2>
+            <div class="card">
 
-            <h3>Numbers</h3>
-            <div id="numbers">
-                <p>These could be your winning numbers...</p>
-            </div>
+              <!-- CSS Loader -->
+              <!-- <div id="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                  <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                </svg>
+              </div> -->
 
-            <h3>Powerball</h3>
-            <div id="powerball">
-                ?
+              <div id="loader">
+                
+              </div>
+
+              <div id="results">
+                <h3>Numbers</h3>
+                <ul id="numbers">
+                    <!-- <p>Your numbers await you.</p> -->
+                    <li class="ball">?</li>
+                    <li class="ball">?</li>
+                    <li class="ball">?</li>
+                    <li class="ball">?</li>
+                    <li class="ball">?</li>
+                </ul>
+
+                <h3>Powerball</h3>
+                <div id="powerball" class="ball">
+                    ?
+                </div>
+              </div>
             </div>
 
             <button id="jackpot-button">Jackpot</button>
@@ -49,10 +81,22 @@
                 <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             </div>
+
+            <!-- <footer>
+              Created by <a href="http://instagram.com/davidjahns">David Jahns</a> in Nashville, TN
+              <ul class="socials">
+                <li><a href="http://www.twitter.com/davidjahns">Twitter</a></li>
+                <li><a href="http://www.instagram.com/davidjahns">Instagram</a></li>
+                <li><a href="http://www.linkedin.com/in/davidjahns">LinkedIn</a></li>
+              </ul>
+            </footer> -->
 
         </div>
 
+        <script src="https://use.typekit.net/yhq3ajq.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
         <script src="script.js"></script>
 
